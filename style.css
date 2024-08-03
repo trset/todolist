@@ -5,15 +5,18 @@
 }
 
 body {
-    background: #181818;
-    font-family: 'fira code';
+    background: #000000;
+    font-family: 'Fira Code';
+    color: #00FF00;
 }
 
-nav{
-    color: white;
+nav {
+    color: #00FF00;
     text-align: center;
-    background: #1b5e20;
+    background: #000000;
     font-size: 40px;
+    padding: 20px;
+    border-bottom: 3px solid #00FF00;
 }
 
 section {
@@ -21,38 +24,45 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
+
 section > div {
-    width: 400px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #addTodo {
-    background: #169ef826;
+    background: #001100;
     border: none;
     font-size: 25px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0;
-    color: white;
+    color: #00FF00;
     border-radius: 5px;
     width: 100%;
-    border-bottom: 2px solid rgb(0, 58, 112);
+    border-bottom: 3px solid #00FF00;
+    flex-grow: 1;
 }
 
 #addTodo::placeholder {
     font-size: 18px;
+    color: #00FF00;
 }
 
-button{
+button {
     font-size: 25px;
-    background: rgb(22, 158, 248);
+    background: #000000;
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 3px;
-    margin: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #00FF00;
+    border: 2px solid #00FF00;
 }
 
 #todolist {
@@ -60,22 +70,25 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    width: 100%;
 }
 
 .todo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-}
-.todo >  p {
     width: 100%;
-    background: #064308;
+    max-width: 600px;
+}
+
+.todo > p {
+    width: 100%;
+    background: #001100;
     border: none;
     font-size: 25px;
-    padding: 5px;
-    margin:  0;
-    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    color: #00FF00;
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
@@ -83,4 +96,42 @@ button{
 
 .done {
     text-decoration: line-through;
+    background: #002200;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        font-size: 30px;
+    }
+
+    #addTodo {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .todo > p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 25px;
+    }
+
+    #addTodo {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .todo > p {
+        font-size: 18px;
+    }
 }
