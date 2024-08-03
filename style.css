@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    font-family: 'fira code';
+}
+
+nav{
+    color: white;
+    text-align: center;
+    background: #1b5e20;
+    font-size: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section > div {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addTodo {
+    background: #169ef826;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 58, 112);
+}
+
+#addTodo::placeholder {
+    font-size: 18px;
+}
+
+button{
+    font-size: 25px;
+    background: rgb(22, 158, 248);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+#todolist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.todo >  p {
+    width: 100%;
+    background: #064308;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    margin:  0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
