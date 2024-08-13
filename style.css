@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background: #000000;
     font-family: 'Fira Code';
-    color: #00FF00;
+    color: #ffffff;
 }
 
 section {
